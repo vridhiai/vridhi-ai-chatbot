@@ -1,0 +1,58 @@
+body {
+font-family: Arial;
+margin:0;
+background:#0f172a;
+color:white;
+text-align:center;
+}
+
+header {
+background:#1e293b;
+padding:20px;
+}
+
+.hero {
+padding:50px;
+}
+
+button {
+padding:10px 20px;
+background:#22c55e;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+.services {
+display:flex;
+justify-content:center;
+gap:20px;
+margin:30px;
+}
+
+.card {
+background:#1e293b;
+padding:20px;
+border-radius:10px;
+}
+
+.chatbot {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#22c55e;
+padding:15px;
+border-radius:50px;
+cursor:pointer;
+}
+
+.chatbox {
+display:none;
+position:fixed;
+bottom:80px;
+right:20px;
+background:white;
+color:black;
+padding:20px;
+border-radius:10px;
+}
