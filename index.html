@@ -3,36 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Chatbot Services | Vridhi AI</title>
-<link rel="stylesheet" href="style.css">
+<title>Vridhi AI | Chatbot Services</title>
+
+<style>
+body {
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background: linear-gradient(135deg, #0f172a, #1e293b);
+color:white;
+}
+
+.hero {
+text-align:center;
+padding:80px 20px;
+}
+
+.hero h1 {
+font-size:40px;
+}
+
+.hero button {
+padding:12px 25px;
+background:#22c55e;
+border:none;
+border-radius:30px;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.hero button:hover {
+transform:scale(1.1);
+}
+
+.chat-btn {
+position:fixed;
+bottom:20px;
+right:20px;
+background:#22c55e;
+padding:15px;
+border-radius:50px;
+cursor:pointer;
+}
+
+.chatbox {
+display:none;
+position:fixed;
+bottom:80px;
+right:20px;
+width:300px;
+background:white;
+color:black;
+border-radius:10px;
+padding:15px;
+}
+
+.message {
+background:#f1f1f1;
+padding:8px;
+margin:5px 0;
+border-radius:5px;
+}
+</style>
+
 </head>
+
 <body>
 
-<header>
-  <h1>Vridhi AI</h1>
-  <p>Smart AI Automation for Modern Businesses</p>
-</header>
-
-<section class="hero">
-  <h2>Automate Your Business with AI Chatbots</h2>
-  <p>24/7 Lead Generation | WhatsApp Automation | Smart AI Solutions</p>
-  <button onclick="openForm()">Book Free Demo</button>
-</section>
-
-<section class="services">
-  <div class="card">AI Chatbot Development</div>
-  <div class="card">WhatsApp Automation</div>
-  <div class="card">Business Automation</div>
-</section>
-
-<div class="chatbot" onclick="chatOpen()">
-💬 Chat with AI
+<div class="hero">
+<h1>AI Chatbot Services in Lucknow</h1>
+<p>Automate your business with smart AI solutions 🚀</p>
+<button onclick="alert('Demo Booked!')">Book Free Demo</button>
 </div>
 
-<div id="chatbox" class="chatbox">
-  <p>Hello! How can we help you?</p>
+<div class="chat-btn" onclick="toggleChat()">💬</div>
+
+<div class="chatbox" id="chatbox">
+<div class="message">Hi 👋 How can I help you?</div>
+<input type="text" placeholder="Type a message..." style="width:100%;padding:8px;">
 </div>
 
-<script src="script.js"></script>
+<script>
+function toggleChat(){
+let box = document.getElementById("chatbox");
+box.style.display = box.style.display === "block" ? "none" : "block";
+}
+</script>
+
 </body>
 </html>
